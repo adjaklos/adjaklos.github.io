@@ -1,25 +1,47 @@
-<header>
-      <nav>
-      <button id="theme-toggle">🌙Dark Mode</button>
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects - Samuel Adjaklo</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Samuel Adjaklo</h1>
+    <nav>
+      <button id="theme-toggle">🌙</button>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">About</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="certificates.html">Certificates</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
       </ul>
     </nav>
-</header>
-<main>
-  <h2>My Projects</h2>
-  <div class="projects">
-    <div class="project-card">
-      <img src="assets/images/github-thumb1.png" alt="Project 1">
-      <h3>Hardware Security Tool</h3>
-      <p>Custom tool to scan FPGA logic paths and detect vulnerabilities.</p>
-      <a href="https://github.com/adjaklo/hardware-security">View on GitHub</a>
+  </header>
+
+  <main>
+    <h2>My Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <img src="assets/images/github-thumb1.png" alt="Project 1" />
+        <h3>Hardware Security Tool</h3>
+        <p>Custom tool to scan FPGA logic paths and detect vulnerabilities.</p>
+        <a href="https://github.com/adjaklo/hardware-security">View on GitHub</a>
+      </div>
+      <div class="project-card">
+        <img src="assets/images/youtube-thumb1.jpg" alt="YouTube Project" />
+        <h3>Embedded Systems Demo</h3>
+        <p>Watch my Raspberry Pi + sensor integration demo!</p>
+        <a href="https://youtube.com/watch?v=example">Watch on YouTube</a>
+      </div>
     </div>
-    <div class="project-card">
-      <img src="assets/images/youtube-thumb1.jpg" alt="YouTube Project">
-      <h3>Embedded Systems Demo</h3>
-      <p>Watch my Raspberry Pi + sensor integration demo!</p>
-      <a href="https://youtube.com/watch?v=example">Watch on YouTube</a>
-    </div>
-  </div>
-</main>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Samuel Adjaklo. All rights reserved.</p>
+  </footer>
+</body>
+</html>
