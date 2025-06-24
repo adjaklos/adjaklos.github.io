@@ -82,3 +82,28 @@ footer {
     gap: 0.5em;
   }
 }
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2em;
+}
+
+.project-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 1em;
+  background: var(--bg);
+  color: var(--text);
+  transition: transform 0.2s;
+}
+
+.project-card img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+}
+
