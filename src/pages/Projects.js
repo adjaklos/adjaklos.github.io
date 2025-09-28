@@ -1,0 +1,23 @@
+import React from 'react';
+
+export default function Projects() {
+  return (
+    <main>
+      <h2>My Projects</h2>
+      <div className="projects">
+        <div className="project-card">
+          <img src="/assets/images/github-thumb1.png" alt="Project 1" />
+          <h3>Hardware Security Tool</h3>
+          <p>Custom tool to scan FPGA logic paths and detect vulnerabilities.</p>
+          <a href="https://github.com/adjaklo/hardware-security">View on GitHub</a>
+        </div>
+        <div className="project-card">
+          <img src="/assets/images/youtube-thumb1.jpg" alt="YouTube Project" />
+          <h3>Embedded Systems Demo</h3>
+          <p>Watch my Raspberry Pi + sensor integration demo!</p>
+          <a href="https://youtube.com/watch?v=example">Watch on YouTube</a>
+        </div>
+      </div>
+    </main>
+  );
+}

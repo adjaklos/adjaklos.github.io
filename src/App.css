@@ -1,0 +1,108 @@
+:root {
+  --bg-light: #f8f9fa;
+  --text-light: #212529;
+  --bg-dark: #121212;
+  --text-dark: #f1f1f1;
+  --accent: #1E90FF;
+}
+
+[data-theme="light"] {
+  --bg: var(--bg-light);
+  --text: var(--text-light);
+}
+
+[data-theme="dark"] {
+  --bg: var(--bg-dark);
+  --text: var(--text-dark);
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  background: var(--accent);
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+#theme-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+main {
+  padding: 2em;
+  max-width: 800px;
+  margin: auto;
+}
+
+.profile-img {
+  width: 150px;
+  border-radius: 50%;
+  display: block;
+  margin: 1em auto;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background: var(--accent);
+  color: white;
+  margin-top: 2em;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2em;
+}
+
+.project-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 1em;
+  background: var(--bg);
+  color: var(--text);
+  transition: transform 0.2s;
+}
+
+.project-card img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+}
