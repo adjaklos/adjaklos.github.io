@@ -20,6 +20,7 @@ export default function Header() {
         <ul className="nav-links">
           <li><Link to="/">About</Link></li>
           <li><Link to="/projects">Projects</Link></li>
+          <li><Link to="/documents">Documents</Link></li>
           {/* Add more links here as you create new pages */}
         </ul>
       </nav>
