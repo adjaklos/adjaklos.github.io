@@ -7,7 +7,7 @@ export default function Documents() {
       <p>You can view or download my official transcript below:</p>
 
 <a
-  href={`${process.env.PUBLIC_URL}/assets/OfficialTranscript.pdf`}
+  href={`${process.env.PUBLIC_URL}/assets/OfficialTranscript.PDF`}
   target="_blank"
   rel="noopener noreferrer"
   style={{
@@ -22,6 +22,7 @@ export default function Documents() {
 >
   📄 View Official Transcript
 </a>
+
     </main>
   );
 }
