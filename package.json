@@ -19,13 +19,25 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": ["react-app","react-app/jest"]
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "browserslist": {
-    "production": [">0.2%","not dead","not op_mini all"],
-    "development": ["last 1 chrome version","last 1 firefox version","last 1 safari version"]
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
   "devDependencies": {
+    "baseline-browser-mapping": "^2.10.18",
     "gh-pages": "^6.3.0"
   }
 }
